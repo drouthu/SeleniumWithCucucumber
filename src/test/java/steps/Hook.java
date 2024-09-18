@@ -35,7 +35,7 @@ public class Hook extends BaseUtil{
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox"); // Bypass OS security model
-        chromeOptions.addArguments("--disable-dev-shm-usage")// overcome limited resource problems
+        chromeOptions.addArguments("--disable-dev-shm-usage");// overcome limited resource problems
         chromeOptions.addArguments("--headless");
         base.Driver = new ChromeDriver(chromeOptions);
     }
